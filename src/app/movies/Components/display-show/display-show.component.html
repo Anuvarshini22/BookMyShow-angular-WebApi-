@@ -1,0 +1,5 @@
+<div class="p-4 mx-5">Choose the Show</div>
+<div class="content mx-5 p-2" *ngFor="let show of shows">
+    <p>ShowName:-{{show.name}}</p>
+    <a href="#" class="btn btn-primary card-link" [routerLink]="['/Movies/ShowSeat',show.id]">BOOK SEATS</a>
+</div>

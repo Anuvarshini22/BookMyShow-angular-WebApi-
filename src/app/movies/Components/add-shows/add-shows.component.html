@@ -1,0 +1,47 @@
+<h4 class="m-5">Add a New Show</h4>
+<form [formGroup]="showDetails" class="m-5" (ngSubmit)="AddShow()">
+    <div class="form-group">
+        <label>Enter show name</label><br>
+        <input class="form-control w-25" type="text" formControlName="name">
+    </div>
+    <div class="form-group">
+        <label>Enter show starttime</label><br>
+        <input class="form-control w-25" type="text" formControlName="startTime">
+    </div>
+    <div class="form-group">
+        <label>Enter show endtime</label><br>
+        <input class="form-control w-25" type="text" formControlName="endTime">
+    </div>
+    <div class="form-group">
+        <label>Enter show theatreid</label><br>
+        <input class="form-control w-25" type="text" formControlName="theatreId">
+    </div>
+    <div class="form-group">
+        <label>Enter show movieid</label><br>
+        <input class="form-control w-25" type="text" formControlName="movieId">
+    </div>
+    <div class="form-group">
+        <label>Enter show capacity</label><br>
+        <input class="form-control w-25" type="number" formControlName="capacity">
+    </div>
+    <div class="form-group">
+        <label>Enter show seatsAvailable</label><br>
+        <input class="form-control w-25" type="number" formControlName="seatsAvailable">
+    </div>
+    <div class="form-group">
+        <label>Enter show CreatedDate</label><br>
+        <input class="form-control w-25" type="text" formControlName="createdDate">
+    </div>
+    <div class="form-group">
+        <label>Enter show UpdatedDate</label><br>
+        <input class="form-control w-25" type="text" formControlName="updatedDate">
+    </div>
+    <div class="form-group">
+        <label>Enter show DeletedDate</label><br>
+        <input class="form-control w-25" type="text" formControlName="deletedDate">
+    </div>
+    <div class="form-group">
+        <button class="btn btn-primary my-3" type="submit">Add new show</button>
+    </div>
+
+</form>

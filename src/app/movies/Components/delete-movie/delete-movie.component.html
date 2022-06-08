@@ -1,0 +1,8 @@
+<h5>Delete movie</h5>
+<form [formGroup]="deleteDetails" (ngSubmit)="DeleteMovie()">
+    <div class="form-group">
+        <label>Enter the movie id</label><br>
+        <input type="number" class="form-control w-25" formControlName="id"><br>
+        <button type="submit" class="btn btn-primary">Delete</button>
+    </div>
+</form>

@@ -1,0 +1,79 @@
+<h5>Please Book Your Tickets</h5>
+<div *ngFor="let show of shows">
+  <p>Total Capacity:{{show.capacity}}</p>
+  <p>Available Seats:{{show.seatsAvailable}}</p>
+  <p>Show Name:{{show.name}}</p>
+</div>
+<p>Movie Name:{{movies.title}}</p>
+<div *ngFor="let theatre of theatre">
+  <p>Theatre Name:{{theatre.name}}</p>
+</div>
+<label>Enter UserName</label><br>
+<input type="text" name="text" placeholder="Enter name" id="username"><br>
+<label>Enter the number of seats</label><br>
+<input type="number" name="number" placeholder="Enter seats" id="seats"><br>
+
+<!--button type="button" (click)="book()" class="btn btn-info btn-lg" data-toggle="modal"
+  data-target="#myModal">BOOK</button-->
+
+<!-- Modal -->
+<!--div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog"-->
+
+    <!-- Modal content-->
+    <!--div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">TICKET</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p>Name:{{userName}}</p>
+        <p>No.ofSeats Booked:{{n}}</p>
+        <div *ngFor="let show of shows">
+          <p>Seat Numbers:{{show.seatsAvailable}} To {{show.seatsAvailable-n}}</p>
+          <p>Show Name:{{show.name}}</p>
+        </div>
+        <p>Movie Name:{{movies.title}}</p>
+        <div *ngFor="let theatre of theatre">
+          <p>Theatre Name:{{theatre.name}}</p>
+        </div>
+        <p>Thanks for booking</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" [routerLink]="['/']">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div-->
+<button type="button" class="btn btn-primary" (click)="book()" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Book
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">TICKET</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Name:{{userName}}</p>
+        <p>No.ofSeats Booked:{{n}}</p>
+        <div *ngFor="let show of shows">
+          <p>Seat Numbers:{{show.seatsAvailable}} To {{show.seatsAvailable-n}}</p>
+          <p>Show Name:{{show.name}}</p>
+        </div>
+        <p>Movie Name:{{movies.title}}</p>
+        <div *ngFor="let theatre of theatre">
+          <p>Theatre Name:{{theatre.name}}</p>
+        </div>
+        <p>Thanks for booking</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" [routerLink]="['/']">Close</button>
+      </div>
+    </div>
+  </div>
+</div>

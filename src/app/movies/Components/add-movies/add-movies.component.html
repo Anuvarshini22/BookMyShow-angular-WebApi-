@@ -1,0 +1,43 @@
+<h4 class="m-5">Add a New Movie</h4>
+<form [formGroup]="movieDetails" class="m-5" (ngSubmit)="AddMovie()">
+    <div class="form-group">
+        <label>Enter Movie Title</label><br>
+        <input class="form-control w-25" type="text" formControlName="title">
+    </div>
+    <div class="form-group">
+        <label>Enter Movie Language</label><br>
+        <input class="form-control w-25" type="text" formControlName="language">
+    </div>
+    <div class="form-group">
+        <label>Enter Movie Genre</label><br>
+        <input class="form-control w-25" type="text" formControlName="genre">
+    </div>
+    <div class="form-group">
+        <label>Enter Movie imageUrl</label><br>
+        <input class="form-control w-25" type="text" formControlName="imageUrl">
+    </div>
+    <div class="form-group">
+        <label>Enter Movie Description</label><br>
+        <input class="form-control w-25" type="text" formControlName="description">
+    </div>
+    <div class="form-group">
+        <label>Enter Movie Price</label><br>
+        <input class="form-control w-25" type="number" formControlName="price">
+    </div>
+    <div class="form-group">
+        <label>Enter Movie CreatedDate</label><br>
+        <input class="form-control w-25" type="text" formControlName="createdDate">
+    </div>
+    <div class="form-group">
+        <label>Enter Movie UpdatedDate</label><br>
+        <input class="form-control w-25" type="text" formControlName="updatedDate">
+    </div>
+    <div class="form-group">
+        <label>Enter Movie DeletedDate</label><br>
+        <input class="form-control w-25" type="text" formControlName="deletedDate">
+    </div>
+    <div class="form-group">
+        <button class="btn btn-primary my-3" type="submit">Add new movie</button>
+    </div>
+
+</form>

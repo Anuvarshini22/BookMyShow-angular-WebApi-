@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="row">
+
+        <div class="card col-3 my-2" *ngFor="let movie of movies">
+            <img class="card-img-top w-100 img2" [src]="movie.imageUrl">
+            <div class="card-body">
+                <h3 class="card-title">{{movie.title}}</h3>
+                <h6>Language:{{movie.language}}</h6>
+                <h6>Genre:{{movie.genre}}</h6>
+
+                <a href="#" class="btn btn-primary card-link" [routerLink]="['/Movies/ShowMovie',movie.id]">BOOK
+                    MOVIE</a>
+            </div>
+
+
+        </div>
+
+    </div>
+</div>

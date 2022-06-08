@@ -1,0 +1,11 @@
+<div class="d-flex show-image w-50">
+    <div>
+        <img class="w-100 p-2 image1" [src]="movie.imageUrl">
+    </div>
+    <div class="pt-5">
+        <p>MOVIE:{{movie.title}}</p>
+        <p>LANGUAGE:{{movie.language}}</p>
+        <p>DESCRIPTION:{{movie.description}}</p>
+        <a href="#" class="btn btn-primary card-link" [routerLink]="['/Movies/ShowTheatre',movie.id]">BOOK THEATRE</a>
+    </div>
+</div>

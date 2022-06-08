@@ -1,0 +1,27 @@
+<h4 class="m-5">Add a New Theatre</h4>
+<form [formGroup]="theatreDetails" class="m-5" (ngSubmit)="AddTheatre()">
+    <div class="form-group">
+        <label>Enter Theatre Name</label><br>
+        <input class="form-control w-25" type="text" formControlName="name">
+    </div>
+    <div class="form-group">
+        <label>Enter Theatre Location</label><br>
+        <input class="form-control w-25" type="text" formControlName="location">
+    </div>
+    <div class="form-group">
+        <label>Enter Theatre CreatedDate</label><br>
+        <input class="form-control w-25" type="text" formControlName="createdDate">
+    </div>
+    <div class="form-group">
+        <label>Enter Theatre UpdatedDate</label><br>
+        <input class="form-control w-25" type="text" formControlName="updatedDate">
+    </div>
+    <div class="form-group">
+        <label>Enter Theatre DeletedDate</label><br>
+        <input class="form-control w-25" type="text" formControlName="deletedDate">
+    </div>
+    <div class="form-group">
+        <button class="btn btn-primary my-3" type="submit">Add new Theatre</button>
+    </div>
+
+</form>
